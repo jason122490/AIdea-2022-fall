@@ -45,6 +45,7 @@ Private test data structure:
 │   ├── img002.jpg
 │   └── ....
 └──
++ we provide image resizing tool for image resize to speed up the train speed
 ```
 ## Train and Infer step:
 ### 1. Training

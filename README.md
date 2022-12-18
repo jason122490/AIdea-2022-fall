@@ -50,14 +50,14 @@ Private test data structure:
 ### 1. Training
 Start training by running:
 ```
-ConvNeXt_large.ipynb
-ConvNeXt_base.ipynb
-EfficientNetV2_large.ipynb
-Swin_transformerV2_base.ipynb
+model/ConvNeXt_large.ipynb
+model/ConvNeXt_base.ipynb
+model/EfficientNetV2_large.ipynb
+model/Swin_transformerV2_base.ipynb
 ```
 output model weight will be save in this structure:
 ```
-├── model_name/
+├── model/model_name/
 │   ├── checkpoint/
 │   |   ├── ckpt001.pt
 │   |   ├── ckpt002.pt
@@ -91,15 +91,15 @@ Output pseudo label will be save in this structure:
 ### 3. Training with pseudo label
 Start training with pseudo label and output embedding data for xgboost by running:
 ```
-ConvNeXt_large.ipynb
-ConvNeXt_base.ipynb
-EfficientNetV2_large.ipynb
-Swin_transformerV2_base.ipynb
+model/ConvNeXt_large.ipynb
+model/ConvNeXt_base.ipynb
+model/EfficientNetV2_large.ipynb
+model/Swin_transformerV2_base.ipynb
 (NOTICE: need to change config in file to pseudo train)
 ```
 Output model weight will be save in this structure:
 ```
-├── model_name/
+├── model/model_name/
 │   ├── checkpoint/
 │   |   ├── ckpt001.pt
 │   |   ├── ckpt002.pt
@@ -111,17 +111,19 @@ Output model weight will be save in this structure:
 │   └── 
 └──
 ```
-Output embedding data for xgboost will be save as:
+Output embedding data for xgboost will be save in this structure:
 ```
-train_emb_model_name
-test_emb_model_name
+├── model/
+│   ├── train_emb_model_name
+│   └── test_emb_model_name
+└──
 ```
 ### 4. Ensemble and XGBoost
 Start to ensemble four model and train xgboost to produce the final result by running:
 ```
-Ensemble_XGBoost.ipynb
+model/Ensemble_XGBoost.ipynb
 ```
 output for private and public's prediction will be save as:
 ```
-test.csv
+model/test.csv
 ```

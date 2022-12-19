@@ -3,6 +3,7 @@ AIdea 農地作物現況調查影像辨識競賽-秋季賽：AI作物影像判�
 ## Requirement
 + OS: ubuntu 22.04
 + Nvidia GPU with CUDA version 11.7
++ Anaconda
 ## Environment Installation
 Create an new conda virtual environment
 ```

@@ -15,6 +15,10 @@ pip install torch torchvision torchaudio
 pip install timm
 pip install albumentations yacs wandb
 ```
+Download code:
+```
+git clone https://github.com/jason122490/AIdea-2022-fall
+```
 ## Data Preparation
 Train data structure:
 ```
@@ -48,10 +52,6 @@ Private test data structure:
 ```
 + We provide image resizing tool for image resize to speed up the training speed in `tool`
 ## Train and Infer step:
-### 0. Download code:
-```
-git clone https://github.com/jason122490/AIdea-2022-fall
-```
 ### 1. Training
 Start training by running:
 ```

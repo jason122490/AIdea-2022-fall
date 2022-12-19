@@ -74,6 +74,7 @@ model weight will be save in this structure:
 │   └── 
 └──
 ```
+NOTICE: if you only want to train, but not output embedding data, just run jupyter notebook until Start Training section.
 ### 2. Pseudo label
 Generate pseudo label by running:
 ```
@@ -100,7 +101,6 @@ model/ConvNeXt_large.ipynb
 model/ConvNeXt_base.ipynb
 model/EfficientNetV2_large.ipynb
 model/Swin_transformerV2_base.ipynb
-(NOTICE: need to change config in file to pseudo train)
 ```
 model weight will be save in this structure:
 ```
@@ -123,6 +123,7 @@ embedding data(image features) for xgboost will be save in this structure:
 │   └── test_emb_model_name
 └──
 ```
+NOTICE: need to change config in file to pseudo train
 ### 4. Ensemble and XGBoost
 Start to ensemble four model and train xgboost to produce the final result by running:
 ```

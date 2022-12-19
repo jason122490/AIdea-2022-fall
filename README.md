@@ -1,5 +1,5 @@
 # AIdea-2022-fall
-AIdea 農地作物現況調查影像辨識競賽-秋季賽：AI作物影像判釋 第二名
+AIdea 農地作物現況調查影像辨識競賽-秋季賽：AI作物影像判釋
 ## Requirement
 + OS: ubuntu 22.04
 + Nvidia GPU with CUDA version 11.7
@@ -12,8 +12,7 @@ conda activate AIdea
 Install required packages:
 ```
 pip install torch torchvision torchaudio
-pip install timm
-pip install albumentations yacs wandb
+pip install timm albumentations yacs wandb xgboost
 ```
 Download code:
 ```

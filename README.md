@@ -49,7 +49,7 @@ Private test data structure:
 │   └── ....
 └──
 ```
-+ We provide image resizing tool for image resize to speed up the training speed in `tool`
++ We provide image resizing tool for image resize to speed up the training speed in `/tool`
 ## Train and Infer step:
 ### 1. Training
 Start training by running:

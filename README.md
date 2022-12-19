@@ -60,7 +60,7 @@ model/ConvNeXt_base.ipynb
 model/EfficientNetV2_large.ipynb
 model/Swin_transformerV2_base.ipynb
 ```
-output model weight will be save in this structure:
+model weight will be save in this structure:
 ```
 ├── model/model_name/
 │   ├── checkpoint/
@@ -79,7 +79,7 @@ Generate pseudo label by running:
 ```
 ConvNeXt_large_get_pseudo_label.ipynb
 ```
-Output pseudo label will be save in this structure:
+pseudo label will be save in this structure:
 ```
 ├── dataset/pseudo_label/
 │   ├── class1/
@@ -102,7 +102,7 @@ model/EfficientNetV2_large.ipynb
 model/Swin_transformerV2_base.ipynb
 (NOTICE: need to change config in file to pseudo train)
 ```
-Output model weight will be save in this structure:
+model weight will be save in this structure:
 ```
 ├── model/model_name/
 │   ├── checkpoint/
@@ -116,7 +116,7 @@ Output model weight will be save in this structure:
 │   └── 
 └──
 ```
-Output embedding data for xgboost will be save in this structure:
+embedding data(image features) for xgboost will be save in this structure:
 ```
 ├── model/
 │   ├── train_emb_model_name
@@ -128,7 +128,7 @@ Start to ensemble four model and train xgboost to produce the final result by ru
 ```
 model/Ensemble_XGBoost.ipynb
 ```
-output for private and public's prediction will be save as:
+private and public's prediction will be save as:
 ```
 model/test.csv
 ```
